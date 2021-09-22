@@ -1,0 +1,120 @@
+.container-informacao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+  }
+  
+  .container-informacao .titulo-principal{
+      width: 100%;
+      height: 10%;
+      text-align: center;
+      align-items: center;
+      margin-top: 2%;
+  } 
+
+.container-informacao .titulo-principal h1{
+  
+   font-size: 30px;
+    color: #14A79C;
+    margin: 0 auto;
+    width: 150px;
+    border-bottom: 2px solid #14A79C;
+    min-width: 100px;
+}
+
+
+
+
+
+  
+  
+  .container-informacao .conteudo{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      margin: 0 23%;
+      margin-top: 2%;
+  }
+  
+  .container-informacao .coluna{
+    display: flex;
+    width: 100%;
+    height: 201px;
+    text-align: center;
+    align-items: center;
+    /*background-image: linear-gradient( to top, #14A79C, #1bd0c4, #86e1c2 );*/
+    color: white;
+    margin: 0 2%;
+    margin-bottom: 2%;
+  }
+
+
+  .container-informacao .linha-2 .coluna-1,
+  .container-informacao .linha-2 .coluna-2,
+  .container-informacao .linha-2 .coluna-3{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to bottom,#74cdaf 0,#40a293 100%);  
+      cursor: pointer;
+  }
+
+
+
+
+  .container-informacao .coluna p{
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  .container-informacao .linha{
+    width: 100%;
+    display: flex;
+    margin-top: 1%;
+  }
+  
+  .container-informacao .linha-2 i{
+    font-size: 60px;
+    margin-bottom: 5%;
+  }
+  .container-informacao .linha-2 p{
+    font-size: 25px;
+  }
+
+  
+  
+  @media all and (max-width: 1046px){
+  
+  
+      .container-informacao .linha{
+          width: 100%;
+          height: 100%;
+          display: block; 
+      }
+
+      .container-informacao .linha-1 .coluna{
+        margin-bottom: 150px;
+    }
+    .container-informacao .titulo-principal{
+      margin-bottom: 5%;
+  } 
+  
+  }
+
+  @media all and (max-width: 800px){
+    .container-informacao .linha-1 .coluna{
+      margin-bottom: 2px;
+      margin-top: 0;
+      min-width: 180px;
+  }
+
+  .container-informacao .titulo-principal{
+    margin-bottom: 2%;
+} 
+
+
+  }

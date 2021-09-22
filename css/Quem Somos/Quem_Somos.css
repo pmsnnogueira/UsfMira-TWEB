@@ -1,0 +1,509 @@
+/*MISSAO    VISAO    VALORES*/
+
+.container-missao{
+  margin-top: 50px;
+  position: relative;
+  height: 100%;
+  display: block;
+  width: 100%;
+}
+
+.container-missao .titulo-principal hr{
+  border: 4px solid #14A79C;
+  border-bottom: 0;
+  width: 5%;
+  margin: 0 auto;
+  margin-top: -15px;
+  min-width: 35px;
+}
+
+.container-missao .conteudo{
+  width: 100%;
+  height: auto;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container-missao .linha{
+  width: 100%;
+  height: 32%;
+
+ /* border: 1px solid #14A79C;*/
+  display: flex;
+  align-items: center;
+  margin: 2% 0;
+}
+.container-missao .linha-1{
+  margin-top: 0%;
+}
+
+.container-missao .informacao{
+  margin-left: 10%;
+  width: 100%;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.container-missao h2{
+  color: #414141;
+  font-size: 16px;
+  padding: 10px 0px;
+  line-height: 16px;
+  margin-left: -0.5%;
+}
+
+.container-missao .texto{
+  margin-top: 5px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #666;
+  text-align: justify;
+}
+
+.container-missao h1{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 26px;
+  color: #14A79C;
+  margin-bottom: 30px;
+}
+
+
+
+.container-missao .coluna{
+width: 50%;
+height: auto;
+}
+
+
+.slide .mySlides{
+width: 100%;
+height: 100%;
+}
+.slide .mySlides img{
+margin-left: 15%;
+margin-top: 5%;
+width: 70%;
+height: 350px;
+border: 1px solid  #14A79C;
+border-radius: 25px;
+}
+
+@media screen and (max-width:850px){
+.slide .mySlides img{
+  display: none;
+}
+
+.container-missao .coluna-1{
+  justify-content: center;
+  width: 70%;
+  height: auto;
+  margin-right: 10%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*INFORMAÇÂO SOBRE SEDE*/
+.container-informacao{
+  margin-top: 50px;
+  background-color: #fcfcfc;
+  height: auto;
+  width: 100%;
+
+}
+
+
+.container-informacao .titulo-principal{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 100px;
+}
+.container-informacao .titulo-principal h2{
+  margin: 0;
+  font-size: 30px; 
+  text-align: center;
+  color: #14A79C;
+}
+
+
+.container-informacao .conteudo{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.container-informacao .coluna
+{
+  height: 250px;
+ margin: 0 10%;
+justify-content: center;
+}
+
+
+
+
+.container-informacao .icon{
+  align-items: center;
+  text-align: center;
+}
+
+.container-informacao .icon i{
+  font-size: 50px;
+}
+
+.container-informacao .informacao{
+
+  align-items: center;
+  text-align: center;
+  
+
+}
+.container-informacao .titulo-morada{
+  margin-bottom: 4px;
+}
+
+.container-informacao .texto-1 i{
+  cursor: pointer;
+  color: #14A79C;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.container-informacao .texto-1 i:hover{
+  color: #8CC63F;
+}
+
+.container-informacao .texto-1 h1{
+  margin-top: 3px;
+  margin-bottom: 3px;
+  color: black;
+}
+.container-informacao .texto-1{
+  color: #858585;
+}
+
+
+/* EQUIPA MEDICA*/
+
+
+
+
+.container-medicos{
+margin-top: 50px;
+background-color: #fcfcfc;
+height:auto;
+overflow:hidden;
+width: 100%;
+
+}
+
+
+.container-medicos .titulo-principal{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100px;
+}
+.container-medicos .titulo-principal h2{
+margin: 0;
+font-size: 30px; 
+text-align: center;
+color: #14A79C;
+}
+
+
+.container-medicos .conteudo{
+width: 100%;
+padding-bottom: 2%;
+display: flex;
+flex-wrap: wrap;
+
+justify-content: center;
+align-items: center;
+
+}
+.container-medicos .conteudo{
+width: 100%;
+padding-bottom: 2%;
+display: flex;
+flex-wrap: wrap;
+
+justify-content: center;
+align-items: center;
+
+}
+.container-medicos .linha{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+
+justify-content: center;
+align-items: center;
+
+}
+
+.container-medicos .coluna{
+width: auto;
+height: 100%;
+justify-content: space-around;
+}
+
+.container-medicos .informacao{
+align-items: center;
+text-align: center;
+}
+.container-medicos .titulo-morada{
+margin-bottom: 4px;
+}
+
+.container-medicos .texto-1 h1{
+margin-top: 3px;
+margin-bottom: 3px;
+color: black;
+}
+.container-medicos .texto-1{
+color: #858585;
+}
+
+.container-medicos .imagem{
+width: 40%;
+height: 200px;
+margin: 0 auto;
+margin-bottom: 3%;
+min-width: 200px;
+
+}
+.container-medicos .imagem-2{
+  min-width: 300px;
+}
+.container-medicos .imagem img{
+width: 100%;
+height: 100%;
+
+}
+
+
+
+
+
+
+
+/*Formuláro contactos*/
+
+.container {
+  overflow: hidden;
+  margin: auto;
+  max-width: 100%;
+  padding: 0 20px;
+  margin-bottom: 2%;
+  margin-top: 5%;
+}
+.flexcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+.flexcontainer .box {
+  white-space: nowrap;
+}
+
+.flexcontainer .box p {
+  text-align: center;
+}
+.required {
+  color: #df0000;
+}
+.text-primary {
+  color: #14A79C;
+  font-size: 25px;
+  
+
+}
+
+.l-heading {
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+}
+#contactos .column {
+  text-align: center;
+  padding: 50px;
+}
+
+#contactos {
+  color: #e8ffe7;
+  overflow: hidden;
+}
+
+
+#contact-form .form-group,
+#login-form .form-group,
+#signup-form .form-group {
+margin-bottom: 20px;
+}
+
+#contact-form .form-group input,
+#contact-form .form-group select,
+#contact-form .form-group text,
+#login-form .form-group input,
+#login-form .form-group select,
+#login-form .form-group text,
+#signup-form .form-group input,
+#signup-form .form-group select,
+#signup-form .form-group text {
+width: 100%;
+margin: 0 2px;
+padding: 10px;
+border: 1px #c7c7c7 solid;
+height: 30px;
+
+}
+
+#contact-form .form-group input:focus,
+#contact-form .form-group select:focus,
+#contact-form .form-group text:focus,
+#login-form .form-group input:focus,
+#login-form .form-group select:focus,
+#login-form .form-group text:focus,
+#signup-form .form-group input:focus,
+#signup-form .form-group select:focus,
+#signup-form .form-group text:focus {
+outline: none;
+border-color: #14A79C;
+}
+
+#contact-form .form-group textarea,
+#login-form .form-group textarea,
+#signup-form .form-group textarea {
+font-size: 1.3em;
+width: 80%;
+padding: 10px;
+border: 1px #c7c7c7 solid;
+height: 200px;
+}
+
+#contact-form .form-group #gender,
+#login-form .form-group #gender,
+#signup-form .form-group #gender {
+padding: 0px 8px;
+width: 60%;
+}
+
+#contact-form .form-group #age,
+#login-form .form-group #age,
+#signup-form .form-group #age {
+padding: 0 10px;
+width: 60px;
+}
+
+#contact-form .form-group #username,
+#contact-form .form-group #password,
+#contact-form .form-group #useremail,
+#login-form .form-group #username,
+#login-form .form-group #password,
+#login-form .form-group #useremail,
+#signup-form .form-group #username,
+#signup-form .form-group #password,
+#signup-form .form-group #useremail {
+width: 15%;
+min-width: 300px;
+}
+
+#contact-form label,
+#login-form label,
+#signup-form label {
+display: block;
+margin-bottom: 5px;
+}
+
+#registar:hover span,
+#voltar:hover span {
+color: white;
+background-color: #00a05b;
+}
+
+
+
+
+
+.column-1{
+    margin: 0 auto;
+
+}
+
+.column-2{
+margin:0 auto;
+
+}
+
+.form-group-message{
+margin-left: 17.5%;
+}
+
+.form-group-textofinal{
+margin-left: 17.5%;
+
+
+}
+
+
+
+
+.btn-enviar{
+margin-left: 17.5%;
+min-width: 80px;
+width: 7%;
+height: 50px;
+background-color: #14A79C;
+border: 1px solid #14A79C ;
+border-radius: 5%;
+color: white;
+
+transition: background-color 2s;
+cursor: pointer;
+outline: none;   
+
+}
+
+.btn-enviar:hover{
+transition: background-color 2s;
+
+background-color: white;
+color: #14A79C;
+border-color: #14A79C;
+}
+
+
+

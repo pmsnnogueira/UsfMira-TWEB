@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+        <link rel=stylesheet type="text/css" href="css/paginaprincipal/menu.css"/>
+        <link rel=stylesheet type="text/css" href="css/paginaprincipal/footer.css"/>
+        <link rel=stylesheet type="text/css" href="css/paginaprincipal/slideshow.css">
+        <link rel=stylesheet type="text/css" href="css/paginaprincipal/paginaprincipal.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+
+    <title>USF Mira</title>                        <!--Mudar Titulo-->
+    </head>
+    <body>
+        
+      <nav>
+        <ul class="menu">
+            <li class="logo"><a style="padding: 0%;" href="index.html"><img src="imagens/Principal/logo.png"></img></a></li>
+            <li class="item"><a href="index.html">USF Mira</a></li>
+            <li class="item"><a href="html/Quem_Somos.html">Quem Somos</a></li>
+            <li class="item"><a href="#">O que Fazemos<i class="fa fa-angle-down fa-indicator" style="margin-left: 3px;"></i></a>
+                <ul class="submenu submenu-1">
+                    <li class="subitem"><a href="html/campanhas.html">Campanhas</a></li>   
+                    <li class="subitem"><a href="html/Fazemos.html">Médico de Família</a></li>   
+                </ul>
+            </li>
+            <li class="item"><a href="#">Indicadores<i class="fa fa-angle-down fa-indicator" style="margin-left: 3px;"></i></a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="html/Indicadores/indicador_1.html">Inscritos USF</a></li>   
+                    <li class="subitem"><a href="html/Indicadores/indicador_6.html">Vacinação covid-19</a></li>   
+                    <li class="subitem"><a href="html/Indicadores/Indicador_2.html">Vacinação</a></li>
+                    <li class="subitem"><a href="html/Indicadores/indicador_3.html">Dependência</a></li>
+                    <li class="subitem"><a href="html/Indicadores/indicador_4.html">Visitas Domiciliárias</a></li>
+                    <li class="subitem"><a href="html/Indicadores/indicador_5.html">Natalidade/Mortalidade</a></li>
+                </ul>
+            </li>
+            <li class="item"><a href="html/Recursos.html">Recursos</a></li>
+            <li class="item"><a href="html/Mais_Apoio.html">Mais Apoio</a></li>
+            <li class="item botao entrar"><a href="html/login.html" ><i class="fas fa-sign-in-alt"></i>Entrar</a></li>
+            <li class="barra"><i class="fas fa-bars"></i><!--<input type="checkbox" id="toggle"/> --></li>
+            
+        </ul>
+    </nav>
+
+    <button onclick="irparacima()" id="Btn-cima"><i class="fas fa-chevron-up" ></i></button>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="imagens/Principal/BANNER_STAYAWAY_02.png" style="width:100%;">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="imagens/Principal/img2.png" style="width:100%;">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="imagens/Principal/BANNER_REGRAS.png" style="width:100%;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="imagens/Principal/img5.jpeg" style="width:100%;">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="imagens/Principal/Portal-SNS.jpeg" style="width:100%;height: 100%;">
+          </div>
+
+          
+        
+        <a class="prev" onclick="menosslide(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        
+
+    </div>
+
+
+    <div class="container-informacao">
+        <div class="titulo-principal">
+            <h1>USF Mira</h1>
+        </div>
+        <div class="conteudo">
+            <div class="linha linha-1">
+                <div class="coluna coluna-1">
+                    <div class="slides_pequenos_1">
+                        <img src="imagens/Principal/slidespequenos/slide1/foto_profissional_3.jpg" style="width:100%;height: 100%;">
+                    </div>
+                    <div class="slides_pequenos_1">
+                        <img src="imagens/Principal/slidespequenos/slide1/foto_sns_3.jpg" style="width:100%;height: 100%;">
+                    </div>
+                    <div class="slides_pequenos_1">
+                        <img src="imagens/Principal/slidespequenos/slide1/SNS-Profissional-1-720x477.jpg" style="width:100%;height: 100%;">
+                    </div>
+                </div>
+                <div class="coluna coluna-2">
+                    <div class="slides_pequenos_2">
+                        <img src="imagens/Principal/slidespequenos/slide2/foto_cidadao_3.jpg" style="width:100%;height: 100%;">
+                    </div>
+                    <div class="slides_pequenos_2">
+                        <img src="imagens/Principal/slidespequenos/slide2/foto_cidadao_34jpg.jpg" style="width:100%;height: 100%;">
+                    </div>
+                    <div class="slides_pequenos_2">
+                        <img src="imagens/Principal/slidespequenos/slide2/SNS-Cidadao-home-2-720x480.jpg" style="width:100%;height: 100%;">
+                    </div>
+                </div>
+                <div class="coluna coluna-3">
+                    <div class="slides_pequenos_3">
+                        <img src="imagens/Principal/slidespequenos/slide3/foto_profissional_1.jpg" style="width:100%;height: 100%;">
+                    </div>
+                    <div class="slides_pequenos_3">
+                        <img src="imagens/Principal/slidespequenos/slide3/foto_profissional_2.jpg" style="width:100%;height: 100%;">
+                    </div>
+                    <div class="slides_pequenos_3">
+                        <img src="imagens/Principal/slidespequenos/slide3/Institucional22-720x478.jpg" style="width:100%;height: 100%;">
+                    </div>
+                </div>
+
+            </div>
+            <div class="linha linha-2" >
+                <div class="coluna coluna-1" onclick="nav('html/Mais_Apoio.html')">
+                    <i class="fas fa-question"></i> 
+                    <p>Perguntas</p>
+                </div>
+                <div class="coluna coluna-2" onclick="nav('html/fazemos.html')">
+                    <i class="fas fa-users"></i>
+                    <p>Médico de Família</p>
+                </div>
+                <div class="coluna coluna-3" onclick="nav('html/campanhas.html')">   
+                    <i class="fas fa-notes-medical"></i>
+                    <p>Campanhas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="titulo logo-text"><span>USF</span> Mira</h1>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i>&nbsp;968 505 222</span>
+                    <span><i class="fas fa-envelope"></i>&nbsp;usf@mira.com</span>
+                </div>
+                <div class="socials">
+                    <a href="https://www.facebook.com/municipiomira/?rf=182676695111895"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2 class="titulo titulo-links">Localização</h2>
+                <br>
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12148.777436250546!2d-8.7373!3d40.426695!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaab3ddd04ad9780e!2sCentro%20de%20Sa%C3%BAde%20de%20Mira!5e0!3m2!1spt-PT!2spt!4v1610832437406!5m2!1spt-PT!2spt" width="100" height="100" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> </div>
+                </div>
+                <div class="footer-section contact-form">
+                <h2 class="titulo titulo-contacto">Contacte-nos</h2>
+                <br>
+                <form action="mailto:someone@example.com" method="post" enctype="text/plain" >
+                    <input type="email" name="email" class="text-input contact-input" placeholder="Email: " required>
+                    <textarea type="text"name="message" class="text-input contact-input" placeholder="Mensagem:"></textarea required>
+                    <button  type="submit" value="Send" class="btn btn-big contact-btn" ><i class="fas fa-envelope"></i>Enviar</button>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+                <p><a>UsfMira.com &copy; Desenvolvido por Nuno e Pedro</a></p>
+        </div>
+    </div>
+
+    <!--FIREBASE-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.2.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.2.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<script src="js/PaginaPrincipal/slideshow.js"></script>
+<script src="js/LogIn/login.js"></script>
+<script src="js/Menu/menu.js"></script>
+  </body>
+</html>
+    
+

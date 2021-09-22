@@ -1,0 +1,145 @@
+.container-recursos{
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.container-recursos .titulo-principal{
+    text-align: center;
+    width: 100%;
+}
+.container-recursos .titulo-principal h2{
+    font-size: 25px;
+    color: #14A79C;
+    margin: 0 auto;
+    width: 150px;
+    border-bottom: 2px solid #14A79C;
+    min-width: 150px;
+}
+
+
+
+
+.container-recursos .conteudo{
+    height: 100%;
+    cursor: default;
+}
+
+
+.container-recursos .linha{
+    margin: 0 auto;
+    margin-top: 3%;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+
+
+
+
+.container-recursos .linha-data{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    min-width: 610px;
+    min-height: 50px;
+    justify-content: left;
+    background-color: #F7F7F7;
+}
+
+.container-recursos .informacao{
+    width: 45%;
+    background-color: #F7F7F7;
+    min-width: 610px;
+    min-height: 50px;
+}
+
+.container-recursos .coluna{
+    width: 50%;
+    height: 100%;
+}
+
+.container-recursos .coluna-data-1{
+    background-color: #D7D7D7;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid white;
+    display: flex;
+    padding-left: 12%;
+    width: 40%;
+}
+
+.container-recursos .coluna-data-2{
+    width: 35%;
+    background-color: #D7D7D7;
+    height: 100%;
+    margin-left: 50%;
+    border-bottom: 2px solid white;
+}
+
+.container-recursos img{
+    height: 310px;
+    width: 100%;
+}
+
+.container-recursos .texto{
+    width: 100%;
+    margin-top: 1%;
+}
+
+.container-recursos h2{
+    color: #14A79C;
+    font-size: 24px;
+    margin-left: 2%;
+    margin-bottom: 3%;
+}
+.container-recursos .texto p{
+    display: flex;
+    color: #666666;
+    width: 100%;
+    padding-left: 2%;
+    padding-bottom: 20px;
+    padding-right: 30px;
+
+}
+
+.container-recursos .coluna-data-1 .dia a{
+    font-size: 35px;
+    color: #666666;
+}
+.container-recursos .coluna-data-1 .dia{
+    margin-right: 5%;
+}
+.container-recursos .coluna-data-1 .ano_mes a{
+    color: #666666;
+    font-size: 16px;
+}
+
+@media screen and (max-width:626px){
+
+    .container-recursos .informacao{
+        background-color: #F7F7F7;
+        min-height: 50px;
+        min-width: 0;
+        width: 80%;
+    }
+
+    .container-recursos .linha-data{
+        min-width: 0;
+        width: 100%;
+    }
+
+    
+    .container-recursos .coluna-data-1{
+        width: auto;
+    }
+}
+

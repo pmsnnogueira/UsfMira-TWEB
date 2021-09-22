@@ -1,0 +1,97 @@
+.div-sucesso {
+    display: flex;
+    flex-direction: column-reverse;
+    cursor: default;
+    margin: 1%;
+}
+
+.texto-sucesso-div {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 2%;
+    color: #009688;
+}
+.imagem-sucesso-div {
+    text-align: center;
+}
+.imagem-sucesso-div img{
+    width: 25%;
+}
+
+
+.btn:link,
+.btn:visited {
+    margin-top: 2%;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+    color: white;
+    background-color: #2ECC71;
+    cursor: pointer;
+}
+    
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+    
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+    
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+    
+.btn::after {
+    background-color: #2ECC71;
+}
+    
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+    
+.btn {
+    animation: moveInBottom 1.5s ease-out;
+    animation-fill-mode: backwards;
+}
+    
+@keyframes moveInBottom {
+    0% {
+         opacity: 0;
+            transform: translateY(30px);
+    }
+    
+    100% {
+            opacity: 1;
+            transform: translateY(0px);
+    }
+}
+
+@media all and (max-width: 739px){
+    .div-sucesso {
+        margin-top: 150px;
+        
+    }
+
+
+}
+
+

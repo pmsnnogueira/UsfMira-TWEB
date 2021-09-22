@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+        <link rel=stylesheet type="text/css" href="../../css/paginaprincipal/menu.css"/>
+        <link rel=stylesheet type="text/css" href="../../css/paginaprincipal/footer.css"/>
+        <link rel=stylesheet type="text/css" href="../../css/Indicadores/Indicadores_3/indicadores_3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        
+        
+
+
+    <title>Indíce de Dependência - USF Mira</title>                        <!--Mudar Titulo-->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    </head>
+    <body>
+        
+      <nav>
+        <ul class="menu">
+            <li class="logo"><a style="padding: 0%;" href="../../index.html"><img src="../../imagens/Principal/logo.png"></img></a></li>
+            <li class="item"><a href="../../index.html">USF Mira</a></li>
+            <li class="item"><a href="../Quem_Somos.html">Quem Somos</a></li>
+            <li class="item"><a href="#">O que Fazemos<i class="fa fa-angle-down fa-indicator" style="margin-left: 3px;"></i></a>
+                <ul class="submenu submenu-1">
+                    <li class="subitem"><a href="../campanhas.html">Campanhas</a></li>   
+                    <li class="subitem"><a href="../Fazemos.html">Médico de Família</a></li>   
+                </ul>
+            </li>
+            <li class="item"><a href="#">Indicadores<i class="fa fa-angle-down fa-indicator" style="margin-left: 3px;"></i></a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="Indicador_1.html">Inscritos USF</a></li>   
+                    <li class="subitem"><a href="indicador_6.html">Vacinação covid-19</a></li>   
+                    <li class="subitem"><a href="Indicador_2.html">Vacinação</a></li>
+                    <li class="subitem"><a href="indicador_3.html">Dependência</a></li>
+                    <li class="subitem"><a href="indicador_4.html">Visitas Domiciliárias</a></li>
+                    <li class="subitem"><a href="indicador_5.html">Natalidade/Mortalidade</a></li>
+                </ul>
+            </li>
+            <li class="item"><a href="../Recursos.html">Recursos</a></li>
+            <li class="item"><a href="../Mais_Apoio.html">Mais Apoio</a></li>
+            <li class="item botao entrar"><a href="../login.html"><i class="fas fa-sign-in-alt"></i>Entrar</a></li>
+            <li class="barra"><i class="fas fa-bars"></i><!--<input type="checkbox" id="toggle"/> --></li>
+            
+        </ul>
+    </nav>
+    <button onclick="irparacima()" id="Btn-cima"><i class="fas fa-chevron-up"></i></button>
+
+    <div class="container-indicador">
+        <div class="titulo-principal">
+            <h1>Indíce de Dependência</h1>
+        </div>
+        <div class="conteudo">
+            <div class="coluna coluna-1">
+                <div id="chart1" class="chart"></div>
+                <div class="informacao"></div>
+            </div>
+            <div class="coluna coluna-2">
+                <div id="chart2" class="chart"></div>
+                <div class="informacao"></div>
+            </div>
+            <div class="coluna coluna-3">
+                <div id="chart3" class="chart"></div>
+                <div class="informacao"></div>
+            </div>
+                <div class="titulo-secundario">
+                     <h1>Justificação</h1>
+                </div>
+                <div class="texto">
+                        <p>Quando fazemos a análise demográfica de uma população, num determinado momento,
+                            a pirâmide etária em números absolutos é o instrumento mais usado. No entanto, se
+                            quisermos efectuar uma avaliação de uma parte populacional ou ter uma visão rápida de
+                            determinados elementos, poderemos usar o critério de agrupar determinados grupos
+                            etários, originando grupos funcionais. Os grupos funcionais mais usados são 0-14, 15-
+                            64 e 65 e mais anos.
+                            </p>
+                </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="titulo logo-text"><span>USF</span> Mira</h1>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i>&nbsp;968 505 222</span>
+                    <span><i class="fas fa-envelope"></i>&nbsp;usf@mira.com</span>
+                </div>
+                <div class="socials">
+                    <a href="https://www.facebook.com/municipiomira/?rf=182676695111895"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2 class="titulo titulo-links">Localização</h2>
+                <br>
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12148.777436250546!2d-8.7373!3d40.426695!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaab3ddd04ad9780e!2sCentro%20de%20Sa%C3%BAde%20de%20Mira!5e0!3m2!1spt-PT!2spt!4v1610832437406!5m2!1spt-PT!2spt" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> </div>
+                </div>
+                <div class="footer-section contact-form">
+                <h2 class="titulo titulo-contacto">Contacte-nos</h2>
+                <br>
+                <form action="mailto:someone@example.com" method="post" enctype="text/plain" >
+                    <input type="email" name="email" class="text-input contact-input" placeholder="Email: " required>
+                    <textarea type="text"name="message" class="text-input contact-input" placeholder="Mensagem:" required></textarea>
+                    <button  type="submit" value="Send" class="btn btn-big contact-btn" ><i class="fas fa-envelope"></i>Enviar</button>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+                <p><a>UsfMira.com &copy; Desenvolvido por Nuno e Pedro</a></p>
+        </div>
+    </div>
+    
+    <script src="../../js/Indicadores/indicadores_3/indicador_3.js"></script>
+    <script src="../../js/Menu/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,235 @@
+.container-informacao{
+    margin-top: 50px;
+    background-color: #F7F7F7;
+    height: auto;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+
+.container-informacao .titulo-principal{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100px;
+   margin-bottom: 1%;
+}
+.container-informacao .titulo-principal h2{
+    font-size: 30px; 
+    color: #14A79C;
+}
+
+
+.container-informacao .conteudo{
+    display: flex;
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+
+.container-informacao .coluna
+{
+    width: 300px;              
+    margin-bottom: 5%;
+    height: 195px;
+}
+
+
+.container-informacao .icon{
+    align-items: center;
+    text-align: center;
+}
+
+.container-informacao .icon i{
+    font-size: 50px;
+}
+
+.container-informacao .informacao{
+
+    align-items: center;
+    text-align: center;
+
+
+}
+.container-informacao .titulo-morada{
+    margin-bottom: 4px;
+}
+.container-informacao .texto-1 i{
+    cursor: pointer;
+    color: #14A79C;
+    margin: 1.5px;
+     font-size: 15px;
+}
+
+
+.container-informacao .texto-1 i:hover{
+    color: #8CC63F;
+}
+
+.container-informacao .texto-1 h1{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: black;
+}
+.container-informacao .texto-1{
+    color: #858585;
+}
+
+.container-informacao .informacao .texto  span a::first-letter{
+
+    color:#14A79C;
+}
+
+.container-informacao .informacao-3 .texto-1 a:hover{
+
+
+    color: #14A79C;
+}
+.container-informacao .informacao-3 .texto-1 a{
+
+    text-decoration: none;
+    color: #858585;
+}
+
+.container-informacao .texto a{
+    margin-bottom: 200px;
+}
+.container-informacao .informacao-1 .titulo h2{
+    margin-bottom: 5%;
+
+}
+.container-informacao .informacao-2 .titulo-morada h2{
+    margin-bottom: 5%;
+}
+.container-informacao .informacao-3 .titulo-morada h2{
+    margin-bottom: 5%;
+}
+
+
+
+
+
+
+
+/*Container Perguntas*/
+.container-perguntas{
+    height: 500px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+
+}
+
+
+.container-perguntas .conteudo{
+    margin-left: 2%;
+    margin-right: 2%;
+    height: auto;
+    display: flex;
+
+    flex-wrap: wrap;  
+    
+
+}
+
+.container-perguntas .accordion-informacoes-uteis{
+    background-color: #f0f0f0;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    margin-top: 2%;
+    color: black;
+  }
+  
+
+  .accordion-informacoes-uteis:after {
+    content: '\02795'; /* Codigo para o (+) */
+    font-size: 10px;
+    color: #f0f0f0;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* codigo para o  (-) */
+  }
+
+  .container-perguntas .active, .accordion-informacoes-uteis:hover {
+    background-color: #ccc;
+  }
+
+  .container-perguntas .panel-informacoes-uteis {
+    width: 100%;
+    padding: 0  18px;
+    background-color: rgb(238, 238, 238);
+    max-height: 0;
+    overflow: hidden;
+    color:  #252525;
+    text-align: left;
+    transition: max-height 0.5s ease-out;
+  
+ }
+  .container-perguntas  span{
+      font-weight: bold;
+  }
+  .container-perguntas  {
+   background-color: white;
+   
+  }
+  .container-perguntas .titulo{
+    display: none;
+  }
+
+.container-perguntas .titulo h2{
+  color: #14A79C;
+  font-size: 30px;
+}
+
+@media screen and (max-width:850px){
+    .container-perguntas .conteudo{
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+}
+@media screen and (max-width:900px){
+
+    .text {
+        display: none;
+        
+    }
+
+    .container-perguntas .titulo{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+}
+
+
+.text {
+    color: #14A79C;
+    font-size: 35px;    
+    position: absolute;
+    bottom: -5%;
+    left: -20%;
+    width: 100%;
+    text-align: center;
+    
+  }
+

@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ecf0f1;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+}
+
+.content.terceira-content,
+.content.quarta-content{
+    display: none;
+}
+
+.content{
+    cursor: default;
+    background-color: #fff;
+    border-radius: 15px;  
+    width: 55%;                        /*  ou colocar 80% para ficar responsivo*/
+    height: 50%;
+    display: flex;
+    justify-content: space-between;    /*horizontal*/
+    align-items: center;     /*Altura*/
+}
+
+.content::before{
+    content: "";
+    position: absolute;
+    background-color:#14A79C;
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    left: 0%;
+}
+.titulo{
+    font-size: 28px;
+    font-weight: bold;
+}
+.titulo-principal{
+    color: #fff;
+}
+
+.titulo-segundo{
+    margin-bottom: 2.5%;
+    color: #14A79C;
+}
+.descricao{
+    font-size: 14px;
+    font-weight: 300px;
+    line-height: 30px;
+}
+.primeira-descricao{
+    color: #fff;
+}
+.segunda-descricao{
+    color: #7f8c8d;
+}
+.btn{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    width: 150px;
+    align-self: center;
+    border: none;
+    outline: none;   
+}
+.btn-principal{
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: background-color 2s;
+    outline: none;   
+}
+
+
+.btn-principal:hover{
+    background-color: #fff;
+    transition: all .5s;
+    color: #14A79C;
+
+}
+
+
+.primeira-content .segunda-coluna{
+    z-index: 11;
+}
+.primeira-content{
+    display: flex;
+    position: relative;           /*Display None*/
+
+}
+.primeira-coluna{
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+
+.segunda-coluna{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.form input{
+    border: none;
+    background-color: #ecf0f1;
+    height: 45px;
+    width: 100%;
+    outline: none;   
+}
+.label-input{
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    outline: none;   
+}
+
+.icon-modifica{
+    color: #7f8c8d;
+    padding: 0 5px;
+}
+
+                                        /* BOTAO PARA CRIAR E FAZER LOG IN DA CONTA*/
+.form input.btn{
+    background-color: #14A79C;
+    font-size: 10px;
+    border: 1px solid #14A79C;
+    transition: background-color 1s;
+    outline: none;   
+}
+
+.btn.btn-segundo[type="button"]:hover{
+    border: 1px solid #14A79C;
+    color: #14A79C;
+    background-color: #ecf0f1;
+}
+
+
+/*Segundo Menu*/
+
+.segunda-content{
+    position: absolute;
+    display: flex;
+}
+
+.segunda-content .primeira-coluna{
+    order: 2;
+    z-index: -1;
+}
+.segunda-content .segunda-coluna{
+    order: 1;
+    z-index: -1;
+}
+
+.password{
+    color: #34495e;
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.entrar-Conta-js .primeira-content .primeira-coluna{
+    z-index: -1;
+}
+.entrar-Conta-js .segunda-content .segunda-coluna{
+    z-index: 11;
+}
+
+.entrar-Conta-js .segunda-content .primeira-coluna{
+    z-index: 13;
+}
+
+.entrar-Conta-js .content::before{
+    left: 60%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    animation: slidedr 2s;
+    z-index: 12;
+}
+
+.criar-Conta-js .content::before{
+    animation: slideesq 2s;
+    z-index: 12;
+}
+
+.criar-Conta-js .segunda-content .primeira-coluna,
+.criar-Conta-js .segunda-content .segunda-coluna{
+    z-index: -1;
+}
+
+
+.criar-Conta-js .primeira-content .segunda-coluna{
+    z-index: 11;
+}
+
+.criar-Conta-js .primeira-content .primeira-coluna{
+    z-index: 13;
+}
+
+.entrar-Conta-js .primeira-content .segunda-coluna{
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoesq 3s;
+}
+
+.criar-Conta-js .segunda-content .segunda-coluna{
+    z-index: -1;
+    position: relative;
+    animation: deslocamentodir 3s;
+    
+}
+
+
+/*Animações*/
+
+
+
+
+@keyframes slidedr{             /*ANIMAÇÂO DO MEMU PARA A DIREITA*/
+    from{
+        left: 0;
+        width: 40%;
+    }
+
+    25%{
+        left: 5%;
+        width: 50%;
+    }
+
+    50%{
+        left: 25%;
+        width: 60%;
+    }
+
+    75%{
+        left: 45%;
+        width: 50%;
+    }
+
+    to{
+        left: 60%;
+        width: 40%;
+    }
+}
+
+@keyframes slideesq{
+    from{
+        left: 60%;
+        width: 40%;
+    }
+
+    25%{
+        left: 45%;
+        width: 50%;
+    }
+
+    50%{
+        left: 25%;
+        width: 60%;
+    }
+
+    75%{
+        left: 5%;
+        width: 50%;
+    }
+
+    to{
+        left: 0%;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:770px){
+
+    .content.primeira-content,
+    .content.segunda-content{
+        display: none;
+    }
+  
+    .content.terceira-content::before,
+    .content.quarta-content::before{
+        display: none;
+    }
+
+    .content.terceira-content,
+    .content.quarta-content{
+        position: absolute;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 75%;
+        height: auto;
+    }
+   
+
+    .conteudo-login{  
+        margin: 4% 0;   
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .content .form{
+        display: inline-block;
+        width: 65%;
+
+    }
+    .content .btn-segundo{
+        width: 95%;
+        height: 40px;
+        background-color: #14A79C;
+        outline: none;   
+    }
+    .content .btn-segundo a{
+       font-size: 14px;
+    }
+
+    .content .texto{
+        cursor: pointer;
+        color: #14A79C;
+        font-size: 14px;
+    }
+
+    .content h1{
+        margin-top: 10%;
+        margin-bottom: 2%;
+        font-size: 20px;
+        color: #636363;
+
+    }
+
+    .content .btn-mudar_para_entrar,
+    .content .btn-mudar_para_criar{
+        border: 0px solid;
+        background-color: white;
+        color: #14A79C;
+        cursor: pointer;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        outline: none;   
+
+    }
+}
+
+
+

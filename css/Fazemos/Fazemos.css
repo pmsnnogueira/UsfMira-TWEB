@@ -1,0 +1,179 @@
+.container-form {
+    font-size: 1em;
+    padding: 35px;
+    width: 700px;
+    margin: 30px auto;
+    margin-top: 30px;
+}
+
+.container-form ::placeholder {
+    color: black;
+}
+
+.container-form input {
+    width: 200px;
+    display: block;
+    border: none;
+    padding: 12px !important;                               /*Padding para quando seleciona */
+    border-bottom:1px solid #14A79C;
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background-repeat: no-repeat;
+    color: black;
+}
+
+.container-form input:focus,                    /*Importante para nao ficar com um quadrado preto*/
+input:valid {
+    box-shadow: none;                       
+    outline: none;
+    background-position: 0 0;
+}
+
+.container-form input::-webkit-input-placeholder {           /*Animação das caixas de texto*/
+    transition: all 0.3s ease-in-out;
+}
+
+.container-form input:focus::-webkit-input-placeholder,
+.container-form input:valid::-webkit-input-placeholder {
+    color: #14A79C;
+    font-size: 11px;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    visibility: visible !important;
+}
+
+.container-form h4
+{
+    font-weight: 400;
+    text-align: center;
+    font-size: 34px;
+}
+
+.container-form h4:not(.no-underline):after {
+    content: '';
+    position: relative;
+    display: block;
+    bottom: 0;
+    margin-top: 1%;
+    margin-bottom: 20px;
+    width: 100%;
+    border-top: 3px solid #14A79C;
+}
+
+.container-form label {
+    font-weight: 400;
+}
+
+.container-form form {
+    padding-top: 20px;
+}
+
+.container-form div {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.container-form input[type="radio"] {
+    width: 30px;
+    display: inline-block;
+}
+
+
+
+.container-form textarea {
+    border: 1px solid #14A79C;
+    color: black;
+    font-weight: 500;
+    font-size: 1em;
+    border-radius: 0;
+    line-height: 22px;
+    display: block;
+    padding: 5px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    min-width: 90px;
+}
+
+
+
+.container-form .genero {
+    margin-left: 0.5%;
+}
+.container-form input[type='radio']:after {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    top: -2px;
+    left: -0.5px;
+    margin: -5px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 5px solid #E2E5E5;
+}
+
+
+.container-form input[type='radio']:checked:after {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    top: -2px;
+    left: -0.5px;
+    margin: -5px;
+    position: relative;
+    background-color: #14A79C;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 5px solid #E2E5E5;
+}
+
+.container-form textarea {
+    height: 10em;
+    min-width: 90px;
+}
+
+@media screen and (max-width: 900px) {
+    .container-form {
+        width: 70%;
+    }
+}
+.container-form input,
+select {
+    width: 100%;
+}
+
+.container-form .btn{
+    padding: 7px;
+    color: white;   
+    background-color: #14A79C;
+    border: 1px solid #14A79C;
+    border-radius: 10px;
+    height: 40px;
+    width: 90px;
+    min-width: 90px;
+    cursor: pointer;
+
+}
+
+.container-form .btn:hover{
+    transition: background-color 2s;
+    background-color: white;
+    border: 1px solid #14A79C;
+    color: #14A79C;
+
+}
+
+.container-form .btn:focus,                    /*Importante para nao ficar com um quadrado preto*/
+.btn:valid {
+    box-shadow: none;                       
+    outline: none;
+    background-position: 0 0;
+}

@@ -1,0 +1,69 @@
+.container-indicador{
+
+    margin-bottom:100px;
+}
+
+.container-indicador .titulo-principal{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    align-items: center;
+    margin-top: 2%;
+} 
+.container-indicador .titulo-principal h1{
+  font-size: 20px;
+  color: #14A79C;
+}
+
+.container-indicador .conteudo{
+    margin-top: 3%;
+    width: 98%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+
+/*PArte do Texto*/
+.container-indicador .titulo-secundario{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    margin-top: 2%;
+} 
+.container-indicador .titulo-secundario h1{
+    font-size: 25px;
+    color: #14A79C;
+    
+}
+
+
+.container-indicador .texto{
+    margin-top: 1%;
+    margin-left: 2%;
+    text-align: left;
+}
+.container-indicador .texto p{
+    font-size: 18px;
+}
+
+.container-indicador .texto p::first-letter{
+    color: #14A79C;
+    font-size: 20px;
+    font-weight: bold;
+}
+.container-indicador .texto span {
+    font-weight: bold;
+ 
+}
+
+
+
+@media screen and (max-width:592px){
+    #chart{
+        width: 95%;
+        height: 220px;
+    }
+}
